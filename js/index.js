@@ -40,3 +40,93 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// NavBar
+let containerClass = document.querySelector(".container");
+let navAttribute = containerClass.querySelector("nav");
+let aAttributeOne = navAttribute.querySelector("a");
+aAttributeOne.textContent = siteContent["nav"]["nav-item-1"];
+
+let aAttributeTwo = aAttributeOne.nextElementSibling;
+aAttributeTwo.textContent = siteContent["nav"]["nav-item-2"];
+
+let aAttributeThree = aAttributeTwo.nextElementSibling;
+aAttributeThree.textContent = siteContent["nav"]["nav-item-3"];
+
+let aAttributeFour = aAttributeThree.nextElementSibling;
+aAttributeFour.textContent = siteContent["nav"]["nav-item-4"];
+
+let aAttributeFive = aAttributeFour.nextElementSibling;
+aAttributeFive.textContent = siteContent["nav"]["nav-item-5"];
+
+let aAttributeSix = aAttributeFive.nextElementSibling;
+aAttributeSix.textContent = siteContent["nav"]["nav-item-6"];
+
+// Header
+let ctaClass = document.querySelector(".cta");
+let ctaDiv = ctaClass.querySelector(".cta-text");
+let ctaHeader = ctaDiv.querySelector("h1");
+ctaHeader.textContent = siteContent["cta"]["h1"];
+
+// Button
+let ctaButton = ctaDiv.querySelector("button");
+ctaButton.textContent = siteContent["cta"]["button"];
+
+// Circle Image
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+// Main Content Section
+let mainContentSectionClass = document.querySelector(".main-content");
+let topContentClass = mainContentSectionClass.querySelector(".top-content");
+let textContent = topContentClass.querySelector(".text-content");
+let textContentHeader = textContent.querySelector("h4");
+textContentHeader.textContent = siteContent["main-content"]["features-h4"];
+
+let textContentParagraph = textContent.querySelector("p");
+textContentParagraph.textContent = siteContent["main-content"]["features-content"];
+
+let textContentTwo = textContent.nextElementSibling;
+let textContentTwoHeader = textContentTwo.querySelector("h4");
+textContentTwoHeader.textContent = siteContent["main-content"]["about-h4"];
+
+let textContentTwoParagraph = textContentTwo.querySelector("p");
+textContentTwoParagraph.textContent = siteContent["main-content"]["about-content"];
+
+let middleImage = mainContentSectionClass.querySelector(".middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// Bottom Content of Main Content Section
+let bottomContentSection = mainContentSectionClass.querySelector(".bottom-content");
+let textContentBottomOne = bottomContentSection.querySelector(".text-content");
+let textContentBottomOneHeader = textContentBottomOne.querySelector("h4")
+textContentBottomOneHeader.textContent = siteContent["main-content"]["services-h4"];
+
+let textContentBottomOneParagraph = textContentBottomOne.querySelector("p");
+textContentBottomOneParagraph.textContent = siteContent["main-content"]["services-content"];
+
+let textContentBottomTwo = textContentBottomOne.nextElementSibling;
+let textContentBottomTwoHeader = textContentBottomTwo.querySelector("h4");
+textContentBottomTwoHeader.textContent = siteContent["main-content"]["product-h4"];
+
+let textContentBottomTwoParagraph = textContentBottomTwo.querySelector("p");
+textContentBottomTwoParagraph.textContent = siteContent["main-content"]["product-content"];
+
+// Contact Section
+let contactSection = document.querySelector(".contact");
+let contactHeader = contactSection.querySelector("h4");
+contactHeader.textContent = siteContent["contact"]["contact-h4"];
+
+contactParagraphOne = contactSection.querySelector("p");
+contactParagraphOne.textContent = siteContent["contact"]["address"];
+
+let contactParagraphTwo = contactParagraphOne.nextElementSibling;
+contactParagraphTwo.textContent = siteContent["contact"]["phone"];
+
+let contactParagraphThree = contactParagraphTwo.nextElementSibling;
+contactParagraphThree.textContent = siteContent["contact"]["email"];
+
+// Footer Section
+let footerSection = document.querySelector("footer");
+let footerParagraph = footerSection.querySelector("p");
+footerParagraph.textContent = siteContent["footer"]["copyright"];
