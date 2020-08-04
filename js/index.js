@@ -62,6 +62,30 @@ aAttributeFive.textContent = siteContent["nav"]["nav-item-5"];
 let aAttributeSix = aAttributeFive.nextElementSibling;
 aAttributeSix.textContent = siteContent["nav"]["nav-item-6"];
 
+// Changing color of nav text\\
+aAttributeOne.style.color = "green";
+aAttributeTwo.style.color = "green";
+aAttributeThree.style.color = "green";
+aAttributeFour.style.color = "green";
+aAttributeFive.style.color = "green";
+aAttributeSix.style.color = "green";
+
+// Adding new child elements
+const newNavElem = document.createElement('a') // instantiate the element 
+newNavElem.textContent = 'Map'                // tack text content
+newNavElem.href = '#'                          // tack any other attrs we need
+const nav = document.querySelector('nav')    // this is the parent we wish to append the new link to
+nav.appendChild(newNavElem)
+newNavElem.style.color = "green";
+
+// Prepending new child elements
+const newNavElemTwo = document.createElement('a') 
+newNavElemTwo.textContent = 'Solutions';
+newNavElemTwo.href = `#`
+const navTwo = document.querySelector('nav')
+navTwo.prepend(newNavElemTwo)
+newNavElemTwo.style.color = "green";
+
 // Header
 let ctaClass = document.querySelector(".cta");
 let ctaDiv = ctaClass.querySelector(".cta-text");
